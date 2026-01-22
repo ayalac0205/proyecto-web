@@ -31,14 +31,14 @@ public class Compra implements Task {
             actor.attemptsTo(
 
 // Espera a que el enlace del producto esté visible
-                    WaitUntil.the(Interfaz.CART_LINK, isVisible()).forNoMoreThan(5).seconds(),
-                    on(Interfaz.CART_LINK),
-                    on(Interfaz.PLACE_ORDER),
-                    WaitUntil.the(Interfaz.NAME_FIELD, isVisible()).forNoMoreThan(5).seconds(),
-                    WaitUntil.the(Interfaz.CARD_FIELD, isVisible()).forNoMoreThan(5).seconds(),
-                    theValue(nombre).into(Interfaz.NAME_FIELD),
-                    theValue(tarjeta).into(Interfaz.CARD_FIELD),
-                    on(Interfaz.PURCHASE_BUTTON)
+                    WaitUntil.the(Interfaz.CARRITO, isVisible()).forNoMoreThan(5).seconds(),
+                    on(Interfaz.CARRITO),
+                    on(Interfaz.REALIZAR_PEDIDO),
+                    WaitUntil.the(Interfaz.CAMPO_NOMBRE, isVisible()).forNoMoreThan(5).seconds(),
+                    WaitUntil.the(Interfaz.CAMPO_TARJETA, isVisible()).forNoMoreThan(5).seconds(),
+                    theValue(nombre).into(Interfaz.CAMPO_NOMBRE),
+                    theValue(tarjeta).into(Interfaz.CAMPO_TARJETA),
+                    on(Interfaz.BOTON_COMPRA)
             );
 
 

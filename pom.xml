@@ -68,8 +68,6 @@
             <version>${serenity.cucumber.version}</version>
         </dependency>
 
-        <!-- Selenium (opcional pero útil si necesitas clases adicionales) -->
-
         <!-- JUnit 4 para el runner CucumberWithSerenity -->
         <dependency>
             <groupId>junit</groupId>

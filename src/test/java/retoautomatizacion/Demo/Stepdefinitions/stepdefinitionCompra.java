@@ -32,7 +32,7 @@ public class stepdefinitionCompra {
             Thread.currentThread().interrupt();
         }
         then(OnStage.theActorInTheSpotlight()).should(
-                seeThat(Text.of(Interfaz.VALUE_ID), containsString(mensaje))
+                seeThat(Text.of(Interfaz.VALOR_ID), containsString(mensaje))
         );
     }
 }

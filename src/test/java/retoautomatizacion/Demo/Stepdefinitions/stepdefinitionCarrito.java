@@ -1,9 +1,5 @@
 package retoautomatizacion.Demo.Stepdefinitions;
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import retoautomatizacion.Demo.Tareas.Compra;
-import retoautomatizacion.Demo.Tareas.Login;
 import retoautomatizacion.Demo.Tareas.AgregarCarrito;
 import retoautomatizacion.Demo.Interfaz.Interfaz;
 import io.cucumber.java.es.*;
@@ -27,7 +23,7 @@ public class stepdefinitionCarrito {
         }
 
         then(OnStage.theActorInTheSpotlight()).should(
-                seeThat(Text.of(Interfaz.TITLE_PRODUCTO), containsString(esperado))
+                seeThat(Text.of(Interfaz.TITULO_PRODUCTO), containsString(esperado))
         );
     }
 }
