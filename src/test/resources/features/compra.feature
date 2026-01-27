@@ -13,7 +13,7 @@ Background:
 #  Then debo validar el mensaje de compra exitosa "Thank you for your purchase!"
 
   @prueba @compra
-  Scenario Outline: Login correcto con credenciales válidas
+  Scenario Outline: Compra realizada satisfactoriamente
     When procedo a la compra con nombre "<nombre>" y tarjeta "<tarjeta>"
     Then debo validar el mensaje de compra exitosa "Thank you for your purchase!"
 
